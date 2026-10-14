@@ -20,6 +20,8 @@ The project focuses on:
 
 ---
 
+
+
 ## 🎯 Project Objectives
 
 The main objectives of this project are:
@@ -33,6 +35,24 @@ The main objectives of this project are:
 7. Present the results in a simple and business-friendly format.
 
 ---
+
+## 📸 Dashboard Preview
+
+### Dashboard Overview
+
+![Dashboard Overview](screenshots/Dashboard1.png)
+
+### Product & Category Analysis
+
+![Product and Category Analysis](screenshots/Dashboard4.png)
+
+### Cart Value Analysis
+
+![Cart Value Analysis](screenshots/Dashboard5.png)
+
+### Data Quality Checks
+
+![Data Quality Checks](screenshots/Dashboard6.png)
 
 ## 🏗️ Project Architecture
 
@@ -60,6 +80,5 @@ The main objectives of this project are:
                       ▼
               Business Insights
 
-## 📸 Dashboard Preview
 
-![E-commerce Analytics Dashboard](screenshots/Dashboard1.png)
+

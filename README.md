@@ -59,3 +59,7 @@ The main objectives of this project are:
                       │
                       ▼
               Business Insights
+
+## 📸 Dashboard Preview
+
+![E-commerce Analytics Dashboard](screenshots/dashboard1.png)

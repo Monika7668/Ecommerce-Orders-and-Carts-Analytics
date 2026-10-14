@@ -62,4 +62,4 @@ The main objectives of this project are:
 
 ## 📸 Dashboard Preview
 
-![E-commerce Analytics Dashboard](screenshots/dashboard1.png)
+![E-commerce Analytics Dashboard](screenshots/Dashboard1.png)

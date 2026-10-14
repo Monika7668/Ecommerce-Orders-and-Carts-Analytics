@@ -5,10 +5,8 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-
-# =========================================================
 # DATABASE
-# =========================================================
+
 
 DB_PATH = Path("data/ecommerce.db")
 
@@ -23,19 +21,15 @@ st.caption(
     "Sample data from DummyJSON. Cart value is not confirmed revenue."
 )
 
-
-# =========================================================
 # DATABASE CHECK
-# =========================================================
+
 
 if not DB_PATH.exists():
     st.error("Database not found. Run: python fetch_data.py")
     st.stop()
 
-
-# =========================================================
 # LOAD DATA
-# =========================================================
+
 
 with sqlite3.connect(DB_PATH) as conn:
 
@@ -68,9 +62,8 @@ if carts.empty:
     st.stop()
 
 
-# =========================================================
 # KPI SECTION
-# =========================================================
+
 
 st.subheader("Overall Cart Metrics")
 
@@ -96,10 +89,8 @@ c4.metric(
     f"{carts['reported_total'].mean():,.2f}"
 )
 
-
-# =========================================================
 # CATEGORY PERFORMANCE
-# =========================================================
+
 
 st.subheader("Category Performance")
 
@@ -140,9 +131,8 @@ st.plotly_chart(
 )
 
 
-# =========================================================
 # TOP 10 PRODUCTS
-# =========================================================
+
 
 st.subheader("Top 10 Products")
 
@@ -190,10 +180,8 @@ st.plotly_chart(
 )
 
 
-# =========================================================
 # TOP 3 PRODUCTS PER CATEGORY
-# DENSE_RANK()
-# =========================================================
+
 
 st.subheader("Top 3 Products by Category")
 
@@ -247,11 +235,8 @@ st.dataframe(
     width="stretch"
 )
 
-
-# =========================================================
 # CART VALUE SEGMENTATION
-# CASE WHEN
-# =========================================================
+
 
 st.subheader("Cart Value Segmentation")
 
@@ -358,10 +343,9 @@ q4.metric(
 )
 
 
-# =========================================================
 # PRODUCT SHARE OF CATEGORY
 # SUM() OVER()
-# =========================================================
+
 
 st.subheader("Product Share of Category Value")
 
@@ -416,10 +400,7 @@ st.dataframe(
     width="stretch"
 )
 
-
-# =========================================================
 # FOOTER
-# =========================================================
 
 st.divider()
 

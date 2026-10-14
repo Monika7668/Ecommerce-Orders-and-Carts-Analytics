@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project is an end-to-end e-commerce data analytics project built using **Python, SQL, SQLite, Pandas, Streamlit, and Plotly**.
+This project is an end-to-end e-commerce data analytics project built using **Python, SQL, SQLite, Streamlit**
 
 The project fetches sample product and cart data from the **DummyJSON API**, stores the data in a relational SQLite database, performs data-quality validation and SQL-based analysis, and presents the results through an interactive Streamlit dashboard.
 
@@ -53,6 +53,11 @@ The main objectives of this project are:
 ### Data Quality Checks
 
 ![Data Quality Checks](screenshots/Dashboard6.png)
+
+##  AI assistance note
+
+AI assistance was used to brainstorm a simple architecture, review code structure, and improve documentation. I checked the table design and query logic, kept the implementation to Python and  SQL, and chose SQLite/Streamlit to make the project easy to run and explain. Before submission, I ran the pipeline, checked the database rows, executed the SQL queries, and verified that the dashboard loads. I would only claim checks I personally completed.
+
 
 ## 🏗️ Project Architecture
 
